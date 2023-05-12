@@ -12,9 +12,9 @@
     "type-check:watch": "vue-tsc --noEmit --watch",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prettier": "prettier .  -c",
-    "format": "prettier .  -w"
+    "format": "prettier .  -w",
+    "prepare": "husky install"
   },
-  "pre-commit": ["type-check", "lint", "prettier"],
   "dependencies": {
     "vue": "^3.2.47"
   },
@@ -24,7 +24,7 @@
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.11.0",
-    "pre-commit": "^1.2.2",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
